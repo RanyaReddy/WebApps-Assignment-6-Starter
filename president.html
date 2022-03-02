@@ -45,6 +45,32 @@ function checkGuess(){
     }
 }
 </script>
+<div class="container">
+    <img src="Madagascar Magpie-Robin.jpg" height="200" width="200" onclick="newImage()" id="img" alt="image">
+    <script>
+    var usingImage=1
+    function newImage(){
+    out=document.getElementById("img")
+    switch(usingImage){
+    case 1:
+    out.src="Madagascar Magpie-Robin.jpg"
+    usingImage=usingImage+1
+    break;
+    case 2:
+    out.src="Abdim's stork.jpg"
+    usingImage=usingImage+1
+    break;
+    case 3:
+    out.src="Rufous sparrow.jpg"
+    usingImage=1
+    break;
+    default:
+    out.src="Rufous sparrow.jpg"
+    }
+    
+    }
+    </script>
+    </div>
 
 </body>
 </html>
